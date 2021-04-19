@@ -8,9 +8,7 @@ layout: default
     </head>
 
     <body>
-        <script>
-            document.getElementById("age").innerHTML = "99";
-        </script>
+
     <center>Guillaume BARBEROT<br>
         Ingénieur en Télécommunication<br>
         <br>
@@ -19,7 +17,12 @@ layout: default
         <br>
         
 
-        <p id="age"></p> ans, marié, 2 enfants 
+        <p id="age"> </p> 
+
+
+		<script>
+		document.getElementById("age").innerHTML = new Date().getFullYear()-1979 +" ans, marié, 2 enfants";
+		</script>
 
     </center>
 
