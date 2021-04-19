@@ -3,26 +3,26 @@ layout: default
 ---
 <!DOCTYPE html>
 <html>
-    <script type="text/javascript">
-    function _calculateAge(birthday) { // birthday is a date
-        var ageDifMs = Date.now() - birthday.getTime();
-        var ageDate = new Date(ageDifMs); // miliseconds from epoch
-        return Math.abs(ageDate.getUTCFullYear() - 1970);
-    }
-    </script>
-<body>
+    <head>
+        <script type="text/javascript">
+        document.getElementById("age").innerHTML = 2021-1979;
+        </script>
+    </head>
 
- <center>Guillaume BARBEROT<br>
-    Ingénieur en Télécommunication<br>
-    <br>
-    Ingénieur diplômé de l'université Lille-I et de l'Institut National des Télécommunications - promotion 2003<br>    
-    Devenue Institut Mines-Télécom Lille Douai (IMT Lille Douai) http://imt-lille-douai.fr/ecole/identite/<br>
-    <br>
-    
+    <body>
 
-    <script>document.write(_calculateAge(1979-01-01))</script> ans, marié, 2 enfants 
-</center>
+    <center>Guillaume BARBEROT<br>
+        Ingénieur en Télécommunication<br>
+        <br>
+        Ingénieur diplômé de l'université Lille-I et de l'Institut National des Télécommunications - promotion 2003<br>    
+        Devenue Institut Mines-Télécom Lille Douai (IMT Lille Douai) http://imt-lille-douai.fr/ecole/identite/<br>
+        <br>
+        
+
+        <p id="age"></p> ans, marié, 2 enfants 
+
+    </center>
 
 
-</body>
+    </body>
 </html>
