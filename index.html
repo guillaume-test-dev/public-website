@@ -3,6 +3,13 @@ layout: default
 ---
 <!DOCTYPE html>
 <html>
+    <script type="text/javascript">
+    function _calculateAge(birthday) { // birthday is a date
+        var ageDifMs = Date.now() - birthday.getTime();
+        var ageDate = new Date(ageDifMs); // miliseconds from epoch
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+    </script>
 <body>
 
  <center>Guillaume BARBEROT<br>
@@ -11,6 +18,11 @@ layout: default
     Ingénieur diplômé de l'université Lille-I et de l'Institut National des Télécommunications - promotion 2003<br>    
     Devenue Institut Mines-Télécom Lille Douai (IMT Lille Douai) http://imt-lille-douai.fr/ecole/identite/<br>
     <br>
+    
+
+    <script>document.write(_calculateAge(1979-01-01))
+        </script>
+
     42 ans, marié, 2 enfants 
 </center>
 
